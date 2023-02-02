@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    margin: 0;
+    height: 100vh;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-rows: 30px 1fr 40px;
+    grid-template-columns: 1fr 80px;
+}
+header {
+    grid-area: header;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 45vw;
+}
+main {
+    grid-area: main;
+    background-color: red;
+}
+aside {
+    grid-area: aside;
+    background-color: blue;
+}
+footer {
+    grid-area: footer;
+    background-color: gray;
+}
+div {
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-transform: uppercase;
+    /*font-variant: small-caps;*/
+    /*font-stretch: condensed;*/
+    font-size: 100%;
+    text-shadow: 1px 1px 1px rebeccapurple;
+}
